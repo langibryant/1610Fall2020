@@ -8,8 +8,11 @@ public class MoverScript : MonoBehaviour
 
     public float moveSpeed = 3f;
     public Vector3 moveDirection;
+    
+    
     void Update()
     {
+        
         if (Input.GetButton("Jump"))
         {
             moveDirection.x = moveSpeed * Time.deltaTime;

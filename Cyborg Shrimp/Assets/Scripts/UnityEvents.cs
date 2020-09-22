@@ -4,15 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PowerUp : MonoBehaviour
+public class UnityEvents : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int score;
-    public UnityEvent powerUpEvent;
+
+    public UnityEvent myUnityEvent;
+
     private void OnTriggerEnter(Collider other)
     {
-        score++;
-        print("Score: " + score);
-        powerUpEvent.Invoke();
+        myUnityEvent.Invoke();
     }
 }
